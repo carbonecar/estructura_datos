@@ -1,0 +1,12 @@
+#############################
+# ARCHIVO DE CONFIGURACION  #
+#############################
+
+
+blockSize 		= 256	#Tama�o del bloque para el hash
+treeBlockSize 		= 100 	#Tama�o del bloque para el arbol
+chargePercent		= 0.8 	#Porcentaje de carga
+minRecordSizeTree	= 0	#Tama�o m�nimo del bloque
+maxRecordPercent	= 0.2 	#Porcentaje m�ximo del registro
+
+EndConfigFile

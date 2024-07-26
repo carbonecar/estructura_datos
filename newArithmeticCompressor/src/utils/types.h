@@ -1,0 +1,27 @@
+/*
+ * types.h
+ *
+ *  Created on: 05/04/2010
+ *      Author: sergio
+ */
+
+#ifndef TYPES_H_
+#define TYPES_H_
+#include <string>
+
+typedef int Offset;
+typedef std::string Key;
+typedef unsigned int KeySize;
+typedef unsigned int Level;
+typedef unsigned int RegisterCounter;
+typedef unsigned int BlockSize;
+typedef unsigned int DataSize;
+typedef unsigned int FreeSpace;
+typedef double ChargeFactor;
+typedef char* Data;
+
+// Tipos de DistributionTable
+typedef unsigned wchar_t charDT;
+typedef unsigned int freqDT;
+
+#endif /* TYPES_H_ */

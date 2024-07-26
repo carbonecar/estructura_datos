@@ -1,0 +1,35 @@
+Suponiendo que Persist es una clase singleton
+
+
+//Crear
+constructor: Tree(tamañoNodo, NombreArchivo) {
+	Bnode::setSize(tamañoNodo);	
+
+	Persist *persist = Persist::getInstance();
+	persist->setFileName(nombreArchivo);
+
+	raiz = new NodoHoja();
+	corriente = raiz;
+	
+	persist->save(raiz);		
+}
+
+
+//Abrir
+contructor: Tree(tamañoNodo, NombreArchivo) {
+	Bnode::setSize(tamañoNodo);
+
+	raiz = persist->load(offset 0);
+	corriente = raiz;	
+}
+
+destructur: ~Tree() {
+	raiz.destructor();
+	corriente.destructor();
+}
+
+//Eliminar
+metodo: Tree->eliminar() {
+	
+	persist->delete();
+}

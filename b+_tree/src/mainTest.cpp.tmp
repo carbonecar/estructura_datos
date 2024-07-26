@@ -1,0 +1,11 @@
+/**
+ * Main de prueba
+ */
+
+#include <iostream>
+#include "test/TestPersistor.h"
+
+int main(int argc, char **argv) {
+	TestPersistor testPersistor;
+	testPersistor.runTests();
+}

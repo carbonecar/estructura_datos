@@ -1,0 +1,9 @@
+Estructura del archivo del Arbol B+
+
+Nodo Intermedio:
+
+ID NIVEL | cantidad claves | offsetIzquierda | (clave | offsetDerecha)+
+
+Nodo Hoja:
+
+ID NIVEL | cantidad registros | espacio libre | anterior | siguiente | (key | longitud | data)+
